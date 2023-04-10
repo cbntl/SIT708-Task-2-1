@@ -12,7 +12,8 @@ import android.widget.Toast;
 //Submitted By: 221039047 for Task 2.1
 public class MainActivity extends Activity {
 
-    Spinner convertFromSpinner, convertToSpinner;
+    Spinner convertFromSpinner;
+    Spinner convertToSpinner;
     EditText inputEditValue;
     TextView convertResult;
 
@@ -67,7 +68,6 @@ public class MainActivity extends Activity {
                     Toast.makeText(getApplicationContext(), "Kindly input an appropriate number for conversion", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
 
 
                 //Conversion Logic
