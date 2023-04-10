@@ -15,11 +15,17 @@
             android:id="@+id/textView"
             android:layout_width="382dp"
             android:layout_height="wrap_content"
-            android:text="Source Unit" />
+            android:text="Source Unit"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
         <Spinner
             android:id="@+id/convert_from"
+            style="@android:style/Widget.Holo.Spinner"
             android:layout_width="381dp"
-            android:layout_height="26dp"
+            android:layout_height="44dp"
+            android:spinnerMode="dialog"
+            android:textSize="24sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="46dp" />
 
@@ -27,36 +33,48 @@
             android:id="@+id/textView2"
             android:layout_width="382dp"
             android:layout_height="wrap_content"
-            android:text="Destination Unit" />
+            android:text="Destination Unit"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
         <Spinner
             android:id="@+id/convert_to"
+            style="@android:style/Widget.Holo.Spinner"
             android:layout_width="381dp"
-            android:layout_height="wrap_content" />
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
 
         <EditText
             android:id="@+id/convert_value"
-            android:layout_width="274dp"
+            android:layout_width="389dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Value to Convert"
             android:ems="10"
-            android:inputType="number" />
+            android:hint="Enter Value to Convert"
+            android:inputType="number"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/convert_button"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
-            android:text="Convert" />
+            android:text="Convert"
+            android:textCursorDrawable="@android:drawable/ic_popup_sync"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="79dp"
+            android:layout_width="195dp"
             android:layout_height="wrap_content"
-            android:text="Result:" />
+            android:text="Result:"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/result_text"
             android:layout_width="293dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
 
 
     </LinearLayout>

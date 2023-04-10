@@ -9,12 +9,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-
-//Student Name : Claire Bantilan
-//Student ID : 221039047
-//Task : Task 2.1
+//Submitted By: 221039047 for Task 2.1
 public class MainActivity extends Activity {
 
     Spinner convertFromSpinner, convertToSpinner;
@@ -113,7 +108,7 @@ public class MainActivity extends Activity {
                     } else if (convertToUnit.equals("Yard")) {
                         result = value / 2.54;
                     } else if (convertToUnit.equals("Foot")) {
-                        result = value * 12;
+                        result = value / 12;
                     } else if (convertToUnit.equals("Inch")) {
                         result = value;
                     }
