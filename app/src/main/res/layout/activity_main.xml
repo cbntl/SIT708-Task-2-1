@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:gravity = "left"
+        android:orientation = "vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:text="Source Unit" />
+        <Spinner
+            android:id="@+id/convert_from"
+            android:layout_width="381dp"
+            android:layout_height="26dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:text="Destination Unit" />
+        <Spinner
+            android:id="@+id/convert_to"
+            android:layout_width="381dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/convert_value"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Value to Convert"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/convert_button"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:text="Convert" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="Result:" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
